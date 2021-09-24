@@ -111,7 +111,8 @@ class App extends Component {
   render() {
     return (
         <View>
-      <TouchableOpacity style={styles.maincontainer} activeOpacity={0.8} onPress={this.signIn}>
+      <TouchableOpacity style={styles.maincontainer} activeOpacity={0.8} title="Google Sign-In"
+      onPress={() => this.onGoogleButtonPress().then(() => console.log('Signed in with Google!'))}>
         <View style={styles.button}>
           <View style={styles.buttonContainer}>
             <Icon
@@ -125,16 +126,16 @@ class App extends Component {
           </View>
         </View>
       </TouchableOpacity>
-        <GoogleSigninButton
+        {/* <GoogleSigninButton
         style={{width: 192, height: 48}}
         // size={GoogleSigninButton.Size.Wide}
         // color={GoogleSigninButton.Color.Dark}
         onPress={this._signIn}
-      />
-       <Button
+      /> */}
+       {/* <Button
       title="Google Sign-In"
       onPress={() => this.onGoogleButtonPress().then(() => console.log('Signed in with Google!'))}
-    />
+    /> */}
     </View>
     )
   }

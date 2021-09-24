@@ -10,12 +10,12 @@ const Login = ({navigation}) => {
     return (
         <SafeAreaView style={loginStyle.mainStyle}>
             <Text style={loginStyle.languageStyle}>English (United status)</Text>
-            {/* <AuthUIPage onPress={new AuthController().login} facebookAuth={ctrl.FaceBookLogin}/> */}
-            <GoogleButton>
+            <AuthUIPage onPress={new AuthController().login} facebookAuth={ctrl.FaceBookLogin}/>
+            {/* <GoogleButton>
             <Text>
                 Sign in with Google
             </Text>
-        </GoogleButton>
+        </GoogleButton> */}
             <BottomView navigation={navigation} isLogin={true}/>
         </SafeAreaView>
     );
