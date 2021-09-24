@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">instergram_demo</string>
+    <string name="facebook_app_id">398195198316329</string>
+    <string name="fb_login_protocol_scheme">fb398195198316329</string>
+</resources>
